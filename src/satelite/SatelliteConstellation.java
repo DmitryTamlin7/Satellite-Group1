@@ -14,31 +14,27 @@ public class SatelliteConstellation {
 
     public void addSatelite(Satelite satelite){
         satelites.add(satelite);
-        System.out.printf("%s добавлен с группировку '%ы' \n",
+        System.out.printf("%s добавлен с группировку '%s' \n",
                 satelite.getName(), constellationName);
     }
 
 
     public void executeAllMission() {
-        System.out.printf("\nВыполенение миссий Группировки %ы\n",
+        System.out.printf("\nВыполенение миссий Группировки %s\n",
                 constellationName.toUpperCase());
-        System.out.printf("==============================================================");
-
         for (Satelite s : satelites){
             s.performMission();
         }
     }
 
     public void ActivateAllSatelites(){
-        System.out.printf("\nАктивация спутников");
-        System.out.printf("------------------------------------------------------------------");
-
+        System.out.printf("\nАктивация спутников\n");
         for (Satelite s : satelites){
             boolean activaited = s.activate();
             if (activaited){
                 System.out.printf("✅ %s: Активация успешна\n", s.getName());
             }else {
-                System.out.printf("%s; Ошибка Активации (заряд: %d%%)\n", s.getName(), (int) (s.getBatteryLevel() * 100));
+                System.out.printf("❌ %s; Ошибка Активации (заряд: %d%%)\n", s.getName(), (int) (s.getBatteryLevel() * 100));
             }
         }
 
@@ -46,5 +42,9 @@ public class SatelliteConstellation {
 
     public List<Satelite> getSatelites() {
         return satelites;
+    }
+
+    public String getConstellationName() {
+        return constellationName;
     }
 }

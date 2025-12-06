@@ -36,4 +36,14 @@ public class ImagingSatelite extends Satelite{
             System.out.printf("Снимок: %s сделан!\n", getPhotosTaken());
         }
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s (Заряд: %d%%)", getName(), (int)(getBatteryLevel() * 100));
+    }
+
+    public String toDetailedString() {
+        return String.format("ImagingSatellite{resolution=%.1f, photosTaken=%d, name='%s', isActive=%s, batteryLevel=%.2f}",
+                resolution, photosTaken, getName(), isActive(), getBatteryLevel());
+    }
 }

@@ -25,13 +25,15 @@ public class CommunicationSatellite extends  Satelite{
     }
 
     public void sendData(double amount){
-        if (isActive()){
             System.out.printf("%s: Отправил %.1f Мбит данных!\n", getName(), amount);
-        }System.out.printf("❌ %s: Не может передать данные - не автивен\n", getName());
     }
 
     @Override
     public String toString() {
+        return String.format("%s (Заряд: %d%%)", getName(), (int)(getBatteryLevel() * 100));
+    }
+
+    public String toDetailedString() {
         return String.format("CommunicationSatellite{bandwidth=%.1f, name='%s', isActive=%s, batteryLevel=%s}",
                 bandWidth,
                 getName(),

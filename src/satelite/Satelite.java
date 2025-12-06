@@ -45,6 +45,6 @@ public abstract class Satelite{
 
     @Override
     public String toString() {
-        return String.format("%s (Заряд: %d%%)", name, (int)(batteryLevel * 100));
+        return String.format("%s (Заряд: %d%%)", name, (int)(getBatteryLevel() * 100));
     }
 }
