@@ -3,9 +3,7 @@ package satelite;
 public class Main {
     public static void main(String[] args) {
         System.out.println("ЗАПСК СИСТЕМЫ УПРАЛЕНИЯ СПУТНИКОВОЙ ГРУППИРОВКОЙ");
-        System.out.println("===================================================================");
-        System.out.println("\nСоздание спутниковой группировки:");
-        System.out.println("----------------------------------------------------------------\n");
+        System.out.println("\nСоздание спутниковой группировки:\n");
 
         CommunicationSatellite comsat1 = new CommunicationSatellite(
                 "Спутник связи Рассвет-1",
@@ -48,8 +46,7 @@ public class Main {
 
 
 
-        System.out.println("\nФормирование группировки");
-        System.out.println("-----------------------------------------------------------");
+        System.out.println("\nФормирование группировки\n");
         SatelliteConstellation constellation = new SatelliteConstellation("RU-BASIK");
         System.out.printf("Создана спутниковая группировка %s: \n", constellation.getConstellationName());
         constellation.addSatelite(comsat1);
@@ -58,11 +55,15 @@ public class Main {
         constellation.addSatelite(imgsat2);
         constellation.addSatelite(imgsat3);
 
-        System.out.println("Подробная информация о спутниках группировки");
+        System.out.println("\nПодробная информация о спутниках группировки\n");
+        System.out.println(constellation.getSatellitesDetailedMultiline());
 
 
         constellation.ActivateAllSatelites();
-        imgsat1.performMission();
         constellation.executeAllMission();
+
+        System.out.println("\nПодробная информация о спутниках группировки\n");
+        System.out.println(constellation.getSatellitesDetailedMultiline());
+
     }
 }

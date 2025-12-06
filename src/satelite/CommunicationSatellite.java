@@ -33,12 +33,5 @@ public class CommunicationSatellite extends  Satelite{
         return String.format("%s (Заряд: %d%%)", getName(), (int)(getBatteryLevel() * 100));
     }
 
-    public String toDetailedString() {
-        return String.format("CommunicationSatellite{bandwidth=%.1f, name='%s', isActive=%s, batteryLevel=%s}",
-                bandWidth,
-                getName(),
-                isActive(),
-                getBatteryLevel()
-        );
-    }
+
 }

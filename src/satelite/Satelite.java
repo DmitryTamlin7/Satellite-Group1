@@ -47,4 +47,9 @@ public abstract class Satelite{
     public String toString() {
         return String.format("%s (Заряд: %d%%)", name, (int)(getBatteryLevel() * 100));
     }
+
+    protected String getBaseDetails() {
+        return String.format("name='%s', isActive=%s, batteryLevel=%.2f",
+                name, isActive, batteryLevel);
+    }
 }

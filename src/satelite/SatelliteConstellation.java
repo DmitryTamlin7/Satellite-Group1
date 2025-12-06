@@ -2,6 +2,7 @@ package satelite;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class SatelliteConstellation {
     private String constellationName;
@@ -38,6 +39,12 @@ public class SatelliteConstellation {
             }
         }
 
+    }
+
+    public String getSatellitesDetailedMultiline() {
+        return satelites.stream()
+                .map(Satelite::getBaseDetails)
+                .collect(Collectors.joining(",\n  ", "\n  ", "\n"));
     }
 
     public List<Satelite> getSatelites() {
