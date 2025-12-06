@@ -35,16 +35,11 @@ public class Main {
                 1080
         );
 
-
-
         System.out.println("Создан спутник: " + comsat1.toString());
         System.out.println("Создан спутник: " + comsat2.toString());
         System.out.println("Создан спутник: " + imgsat1.toString());
         System.out.println("Создан спутник: " + imgsat2.toString());
         System.out.println("Создан спутник: " + imgsat3.toString());
-
-
-
 
         System.out.println("\nФормирование группировки\n");
         SatelliteConstellation constellation = new SatelliteConstellation("RU-BASIK");
@@ -57,7 +52,6 @@ public class Main {
 
         System.out.println("\nПодробная информация о спутниках группировки\n");
         System.out.println(constellation.getSatellitesDetailedMultiline());
-
 
         constellation.ActivateAllSatelites();
         constellation.executeAllMission();

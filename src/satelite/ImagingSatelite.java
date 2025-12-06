@@ -1,7 +1,5 @@
 package satelite;
 
-import java.nio.file.Path;
-
 public class ImagingSatelite extends Satelite{
 
     private double resolution;
@@ -41,6 +39,4 @@ public class ImagingSatelite extends Satelite{
     public String toString() {
         return String.format("%s (Заряд: %d%%)", getName(), (int)(getBatteryLevel() * 100));
     }
-
-
 }

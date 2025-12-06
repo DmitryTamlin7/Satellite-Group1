@@ -19,7 +19,6 @@ public class SatelliteConstellation {
                 satelite.getName(), constellationName);
     }
 
-
     public void executeAllMission() {
         System.out.printf("\nВыполенение миссий Группировки %s\n",
                 constellationName.toUpperCase());
@@ -38,7 +37,6 @@ public class SatelliteConstellation {
                 System.out.printf("❌ %s; Ошибка Активации (заряд: %d%%)\n", s.getName(), (int) (s.getBatteryLevel() * 100));
             }
         }
-
     }
 
     public String getSatellitesDetailedMultiline() {
