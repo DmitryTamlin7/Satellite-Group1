@@ -27,7 +27,7 @@ public class CommunicationSatellite extends  Satelite{
     public void sendData(double amount){
         if (isActive()){
             System.out.printf("%s: Отправил %.1f Мбит данных!\n", getName(), amount);
-        }
+        }System.out.printf("❌ %s: Не может передать данные - не автивен\n", getName());
     }
 
     @Override
