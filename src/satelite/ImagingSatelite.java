@@ -21,15 +21,15 @@ public class ImagingSatelite extends Satelite{
 
     @Override
     protected void performMission() {
-        if (isActive()) {
+        if (state.isActive()) {
             System.out.printf("%s: Сьемка территории с разрешением %.1f м.пиксель\n", getName(), getResolution());
             TakePhoto();
-            consumeBattery(0.08);
+            consumeEnergy(0.08);
         }else System.out.printf("❌ %s: сьемка невозможна - аппарат не активен\n", getName());
     }
 
     public void TakePhoto(){
-        if (isActive()){
+        if (state.isActive()){
             photosTaken += 1;
             System.out.printf("Снимок: %s сделан!\n", getPhotosTaken());
         }

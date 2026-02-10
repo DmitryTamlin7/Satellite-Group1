@@ -2,29 +2,30 @@ package satelite;
 
 public abstract class Satelite{
     private String name;
-    private Boolean isActive;
-    private double batteryLevel;
+    protected SatelliteState state;
+    protected  EnergySystem energy;
 
     public Satelite(String name, double batteryLevel) {
         this.name = name;
-        this.batteryLevel = batteryLevel;
-        this.isActive = false;
+        this.energy = new EnergySystem(batteryLevel);
+        this.state = new SatelliteState();
     }
 
     public boolean activate(){
-        if (batteryLevel > 0.20){
-            return  isActive = true;
+        if (!energy.isCriticleLevel()){
+            state.activate();
+            return true;
         }
         return false;
     }
 
     public void deactivate(){
-        if (isActive){ isActive = false; }
+        state.deactivate();
     }
 
-    public void consumeBattery(double amount){
-        batteryLevel -= amount;
-        if (batteryLevel <= 0.2){
+    protected void consumeEnergy(double amount){
+        energy.consumeBattery(amount);
+        if (energy.isCriticleLevel()){
             deactivate();
         }
     }
@@ -32,11 +33,11 @@ public abstract class Satelite{
     protected abstract void performMission();
 
     public double getBatteryLevel() {
-        return batteryLevel;
+        return energy.getBatteryLevel();
     }
 
     public Boolean isActive() {
-        return isActive;
+        return state.isActive();
     }
 
     public String getName() {
@@ -50,6 +51,6 @@ public abstract class Satelite{
 
     protected String getBaseDetails() {
         return String.format("name='%s', isActive=%s, batteryLevel=%.2f",
-                name, isActive, batteryLevel);
+                name, state.isActive(), energy.getBatteryLevel());
     }
 }
