@@ -1,6 +1,6 @@
 package satelite;
 
-public class CommunicationSatellite extends  Satelite{
+public class CommunicationSatellite extends  Satellite{
 
     private  double bandWidth;
 

@@ -1,6 +1,6 @@
 package satelite;
 
-public class ImagingSatelite extends Satelite{
+public class ImagingSatelite extends Satellite{
 
     private double resolution;
     private int photosTaken;

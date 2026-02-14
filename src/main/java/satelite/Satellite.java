@@ -1,11 +1,11 @@
 package satelite;
 
-public abstract class Satelite{
+public abstract class Satellite{
     private String name;
     protected SatelliteState state;
     protected  EnergySystem energy;
 
-    public Satelite(String name, double batteryLevel) {
+    public Satellite(String name, double batteryLevel) {
         this.name = name;
         this.energy = new EnergySystem(batteryLevel);
         this.state = new SatelliteState();

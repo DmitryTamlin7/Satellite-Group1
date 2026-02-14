@@ -6,28 +6,28 @@ import java.util.stream.Collectors;
 
 public class SatelliteConstellation {
     private String constellationName;
-    private List<Satelite> satelites;
+    private List<Satellite> satelites;
 
     public SatelliteConstellation(String constellationName) {
         this.constellationName = constellationName;
         this.satelites = new ArrayList<>();
     }
 
-    public void addSatelite(Satelite satelite){
+    public void addSatelite(Satellite satelite){
         satelites.add(satelite);
     }
 
     public void executeAllMission() {
         System.out.printf("\nВыполенение миссий Группировки %s\n",
                 constellationName.toUpperCase());
-        for (Satelite s : satelites){
+        for (Satellite s : satelites){
             s.performMission();
         }
     }
 
     public void ActivateAllSatelites(){
         System.out.printf("\nАктивация спутников\n");
-        for (Satelite s : satelites){
+        for (Satellite s : satelites){
             boolean activaited = s.activate();
             if (activaited){
                 System.out.printf("✅ %s: Активация успешна\n", s.getName());
@@ -39,11 +39,11 @@ public class SatelliteConstellation {
 
     public String getSatellitesDetailedMultiline() {
         return satelites.stream()
-                .map(Satelite::getBaseDetails)
+                .map(Satellite::getBaseDetails)
                 .collect(Collectors.joining(",\n  ", "\n  ", "\n"));
     }
 
-    public List<Satelite> getSatelites() {
+    public List<Satellite> getSatelites() {
         return satelites;
     }
 

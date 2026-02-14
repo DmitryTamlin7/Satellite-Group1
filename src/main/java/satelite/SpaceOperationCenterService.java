@@ -16,7 +16,7 @@ public class SpaceOperationCenterService {
         repository.addConstellation(constellation);
     }
 
-    public void addSatelliteToConstellation(String constellationName, Satelite satelite) {
+    public void addSatelliteToConstellation(String constellationName, Satellite satelite) {
         SatelliteConstellation constellation = repository.getConstellation(constellationName);
         constellation.addSatelite(satelite);
         System.out.printf("Добавлен спутник %s в Группировку %s \n",
@@ -33,7 +33,7 @@ public class SpaceOperationCenterService {
     public void activateAllSatellite(String constellationName){
         SatelliteConstellation constellation = repository.getConstellation(constellationName);
         System.out.printf("\nАктивация Спутников в Группировке %s ", constellation.getConstellationName());
-        for (Satelite satelite : constellation.getSatelites()){
+        for (Satellite satelite : constellation.getSatelites()){
             satelite.activate();
         }
     }
@@ -42,7 +42,7 @@ public class SpaceOperationCenterService {
         SatelliteConstellation constellation = repository.getConstellation(constellationName);
         System.out.printf("\n===СТАТУС ГРУППИРОВКИ: %s ====\n", constellationName);
         System.out.printf("Колличество спутников: %s\n", constellation.getSatelites().size());
-        for (Satelite satelite : constellation.getSatelites()){
+        for (Satellite satelite : constellation.getSatelites()){
             System.out.println(satelite.getBaseDetails());
         }
     }
