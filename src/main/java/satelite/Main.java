@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-@SpringBootApplication
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("ЗАПСК СИСТЕМЫ УПРАЛЕНИЯ СПУТНИКОВОЙ ГРУППИРОВКОЙ");
@@ -16,8 +16,9 @@ public class Main {
 
         CommunicationSatellite comsat1 = new CommunicationSatellite(
                 "Спутник связи Рассвет-1",
-                0.85,
+                0.99,
                 500.0
+
         );
 
         CommunicationSatellite comsat2 = new CommunicationSatellite(
@@ -28,7 +29,7 @@ public class Main {
 
         ImagingSatelite imgsat1 = new ImagingSatelite(
                 "Спутник зондирования Зенит-1 ",
-                0.99,
+              0.99,
                 2880
         );
 
@@ -40,7 +41,7 @@ public class Main {
 
         ImagingSatelite imgsat3 = new ImagingSatelite(
                 "Спутник зондирования Зенит-3 ",
-                0.12,
+              0.12,
                 1080
         );
 

@@ -1,9 +1,13 @@
 package satelite;
 
+import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
+@Data
 public class SatelliteConstellation {
     private String constellationName;
     private List<Satellite> satelites;
@@ -13,7 +17,7 @@ public class SatelliteConstellation {
         this.satelites = new ArrayList<>();
     }
 
-    public void addSatelite(Satellite satelite){
+    public void addSatellite(Satellite satelite){
         satelites.add(satelite);
     }
 
@@ -25,7 +29,7 @@ public class SatelliteConstellation {
         }
     }
 
-    public void ActivateAllSatelites(){
+    public void ActivateAllSatellites(){
         System.out.printf("\nАктивация спутников\n");
         for (Satellite s : satelites){
             boolean activaited = s.activate();

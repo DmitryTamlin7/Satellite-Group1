@@ -1,5 +1,8 @@
 package satelite;
 
+import lombok.Data;
+
+@Data
 public class SatelliteState {
     private boolean isActive;
 

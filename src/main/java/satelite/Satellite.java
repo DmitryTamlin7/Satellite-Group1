@@ -1,5 +1,9 @@
 package satelite;
 
+
+import lombok.Data;
+
+@Data
 public abstract class Satellite{
     private String name;
     protected SatelliteState state;
@@ -10,6 +14,7 @@ public abstract class Satellite{
         this.energy = new EnergySystem(batteryLevel);
         this.state = new SatelliteState();
     }
+
 
     public boolean activate(){
         if (!energy.isCriticleLevel()){
@@ -38,10 +43,6 @@ public abstract class Satellite{
 
     public Boolean isActive() {
         return state.isActive();
-    }
-
-    public String getName() {
-        return name;
     }
 
     @Override

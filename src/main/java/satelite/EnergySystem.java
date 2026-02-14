@@ -1,5 +1,8 @@
 package satelite;
 
+import lombok.Data;
+
+@Data
 public class EnergySystem {
     private double batteryLevel;
     private final double criticleLevel = 0.20;
@@ -15,9 +18,6 @@ public class EnergySystem {
         }
     }
 
-    public double getBatteryLevel() {
-        return batteryLevel;
-    }
 
     public boolean isCriticleLevel(){
         return  batteryLevel <= criticleLevel;

@@ -5,6 +5,12 @@ plugins {
     id("jacoco")
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
+}
+
 repositories {
     mavenCentral()
 }
@@ -16,6 +22,7 @@ dependencies {
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
 }
+
 
 tasks.test {
     useJUnitPlatform()

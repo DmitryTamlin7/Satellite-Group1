@@ -18,7 +18,7 @@ public class SpaceOperationCenterService {
 
     public void addSatelliteToConstellation(String constellationName, Satellite satelite) {
         SatelliteConstellation constellation = repository.getConstellation(constellationName);
-        constellation.addSatelite(satelite);
+        constellation.addSatellite(satelite);
         System.out.printf("Добавлен спутник %s в Группировку %s \n",
                 satelite.getName(),
                 constellation.getConstellationName());

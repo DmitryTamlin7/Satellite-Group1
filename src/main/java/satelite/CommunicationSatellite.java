@@ -1,12 +1,19 @@
 package satelite;
 
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Data
+@EqualsAndHashCode(callSuper=false)
 public class CommunicationSatellite extends  Satellite{
 
     private  double bandWidth;
 
-    public CommunicationSatellite(String name, double batteryLevel, double bandWidth) {
-        super(name, batteryLevel);
+    public CommunicationSatellite(String name, double energy,  double bandWidth) {
+        super(name, energy);
         this.bandWidth = bandWidth;
+        state = new SatelliteState();
     }
 
     public double getBandWidth() { return bandWidth; }

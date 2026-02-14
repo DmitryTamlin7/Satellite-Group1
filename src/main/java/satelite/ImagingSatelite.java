@@ -5,10 +5,12 @@ public class ImagingSatelite extends Satellite{
     private double resolution;
     private int photosTaken;
 
-    public ImagingSatelite(String name, double batteryLevel, double resolution) {
+    public ImagingSatelite(String name,  double  batteryLevel, double resolution) {
         super(name, batteryLevel);
         this.resolution = resolution;
         this.photosTaken = 0;
+        state = new SatelliteState();
+
     }
 
     public int getPhotosTaken() {
