@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="satellite.GlobalSystemMockTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-02-15T11:47:17.628Z" hostname="admins-MacBook-Air.local" time="0.068">
+<testsuite name="satellite.GlobalSystemMockTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-02-15T11:56:24.116Z" hostname="admins-MacBook-Air.local" time="0.065">
   <properties/>
   <testcase name="Проектный тест: Создание и инициализация всей системы" classname="satellite.GlobalSystemMockTest" time="0.002"/>
-  <testcase name="Проектный тест: Логика работы спутника через сервис" classname="satellite.GlobalSystemMockTest" time="0.061"/>
-  <testcase name="Проектный тест: Защита системы (обработка отсутствующих данных)" classname="satellite.GlobalSystemMockTest" time="0.003"/>
+  <testcase name="Проектный тест: Логика работы спутника через сервис" classname="satellite.GlobalSystemMockTest" time="0.06"/>
+  <testcase name="Проектный тест: Защита системы (обработка отсутствующих данных)" classname="satellite.GlobalSystemMockTest" time="0.002"/>
   <system-out><![CDATA[
 Активация Спутников в Группировке Group 
 === ВЫПОЛНЕНИЕ МИССИЙ ДЛЯ ГРУППИРОВКИ: Group ===

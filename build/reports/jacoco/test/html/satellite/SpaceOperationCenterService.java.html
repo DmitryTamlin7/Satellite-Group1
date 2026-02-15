@@ -43,13 +43,13 @@ public class SpaceOperationCenterService {
 <span class="fc" id="L43">    }</span>
 
     public void showConstellationStatus(String constellationName){
-<span class="nc" id="L46">        SatelliteConstellation constellation = repository.getConstellation(constellationName);</span>
-<span class="nc" id="L47">        System.out.printf(&quot;\n===СТАТУС ГРУППИРОВКИ: %s ====\n&quot;, constellationName);</span>
-<span class="nc" id="L48">        System.out.printf(&quot;Колличество спутников: %s\n&quot;, constellation.getSatelites().size());</span>
-<span class="nc bnc" id="L49" title="All 2 branches missed.">        for (Satellite satelite : constellation.getSatelites()){</span>
-<span class="nc" id="L50">            System.out.println(satelite.getBaseDetails());</span>
-<span class="nc" id="L51">        }</span>
-<span class="nc" id="L52">    }</span>
+<span class="fc" id="L46">        SatelliteConstellation constellation = repository.getConstellation(constellationName);</span>
+<span class="fc" id="L47">        System.out.printf(&quot;\n===СТАТУС ГРУППИРОВКИ: %s ====\n&quot;, constellationName);</span>
+<span class="fc" id="L48">        System.out.printf(&quot;Колличество спутников: %s\n&quot;, constellation.getSatelites().size());</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">        for (Satellite satelite : constellation.getSatelites()){</span>
+<span class="fc" id="L50">            System.out.println(satelite.getBaseDetails());</span>
+<span class="fc" id="L51">        }</span>
+<span class="fc" id="L52">    }</span>
 
 
 

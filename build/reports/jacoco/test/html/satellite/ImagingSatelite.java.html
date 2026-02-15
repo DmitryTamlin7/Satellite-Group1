@@ -23,11 +23,11 @@ public class ImagingSatelite extends Satellite{
 
     @Override
     protected void performMission() {
-<span class="pc bpc" id="L26" title="1 of 2 branches missed.">        if (state.isActive()) {</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        if (state.isActive()) {</span>
 <span class="fc" id="L27">            System.out.printf(&quot;%s: Сьемка территории с разрешением %.1f м.пиксель\n&quot;, getName(), getResolution());</span>
 <span class="fc" id="L28">            TakePhoto();</span>
 <span class="fc" id="L29">            consumeEnergy(0.08);</span>
-<span class="nc" id="L30">        }else System.out.printf(&quot;❌ %s: сьемка невозможна - аппарат не активен\n&quot;, getName());</span>
+<span class="fc" id="L30">        }else System.out.printf(&quot;❌ %s: сьемка невозможна - аппарат не активен\n&quot;, getName());</span>
 <span class="fc" id="L31">    }</span>
 
     public void TakePhoto(){
@@ -39,7 +39,7 @@ public class ImagingSatelite extends Satellite{
 
     @Override
     public String toString() {
-<span class="nc" id="L42">        return String.format(&quot;%s (Заряд: %d%%)&quot;, getName(), (int)(getBatteryLevel() * 100));</span>
+<span class="fc" id="L42">        return String.format(&quot;%s (Заряд: %d%%)&quot;, getName(), (int)(getBatteryLevel() * 100));</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

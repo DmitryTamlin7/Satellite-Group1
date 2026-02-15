@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="satellite.MainClassTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-02-15T11:47:17.740Z" hostname="admins-MacBook-Air.local" time="0.023">
+<testsuite name="satellite.MainClassTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-02-15T11:56:24.192Z" hostname="admins-MacBook-Air.local" time="0.112">
   <properties/>
-  <testcase name="Проверка работы исключая ошибки портов и тд." classname="satellite.MainClassTest" time="0.021"/>
-  <testcase name="Проверка возможность подьема" classname="satellite.MainClassTest" time="0.001"/>
-  <system-out><![CDATA[
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
- :: Spring Boot ::                (v3.2.2)
-
-2026-02-15T14:47:17.732+03:00  INFO 85275 --- [    Test worker] satellite.MainClassTest                  : Starting MainClassTest using Java 21.0.8 with PID 85275 (started by admin in /Users/admin/Desktop/БауманТех/SateliteGroup)
-2026-02-15T14:47:17.733+03:00  INFO 85275 --- [    Test worker] satellite.MainClassTest                  : No active profile set, falling back to 1 default profile: "default"
-2026-02-15T14:47:17.739+03:00  INFO 85275 --- [    Test worker] satellite.MainClassTest                  : Started MainClassTest in 0.033 seconds (process running for 2.221)
-ЗАПСК СИСТЕМЫ УПРАЛЕНИЯ СПУТНИКОВОЙ ГРУППИРОВКОЙ
+  <testcase name="Проверка работы исключая ошибки портов и тд." classname="satellite.MainClassTest" time="0.11"/>
+  <testcase name="Проверка возможность подьема" classname="satellite.MainClassTest" time="0.002"/>
+  <system-out><![CDATA[ЗАПСК СИСТЕМЫ УПРАЛЕНИЯ СПУТНИКОВОЙ ГРУППИРОВКОЙ
 
 Создание спутниковой группировки:
 
@@ -28,9 +16,70 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.2)
 
-2026-02-15T14:47:17.757+03:00  INFO 85275 --- [    Test worker] satellite.Main                           : Starting Main using Java 21.0.8 with PID 85275 (started by admin in /Users/admin/Desktop/БауманТех/SateliteGroup)
-2026-02-15T14:47:17.757+03:00  INFO 85275 --- [    Test worker] satellite.Main                           : No active profile set, falling back to 1 default profile: "default"
-2026-02-15T14:47:17.760+03:00  INFO 85275 --- [    Test worker] satellite.Main                           : Started Main in 0.018 seconds (process running for 2.243)
+2026-02-15T14:56:24.214+03:00  INFO 85745 --- [    Test worker] satellite.Main                           : Starting Main using Java 21.0.8 with PID 85745 (started by admin in /Users/admin/Desktop/БауманТех/SateliteGroup)
+2026-02-15T14:56:24.214+03:00  INFO 85745 --- [    Test worker] satellite.Main                           : No active profile set, falling back to 1 default profile: "default"
+2026-02-15T14:56:24.296+03:00  INFO 85745 --- [    Test worker] satellite.Main                           : Started Main in 0.102 seconds (process running for 2.218)
+Созранена группировка: Орбита 1
+Созранена группировка: Орбита 2
+
+]]>&#x1f6f0;<![CDATA[️Добавление спутников: 
+
+Добавлен спутник Спутник связи Рассвет-1 в Группировку Орбита 1 
+Добавлен спутник Спутник связи Рассвет-2 в Группировку Орбита 2 
+Добавлен спутник Спутник зондирования Зенит-1  в Группировку Орбита 1 
+Добавлен спутник Спутник зондирования Зенит-2  в Группировку Орбита 1 
+Добавлен спутник Спутник зондирования Зенит-3  в Группировку Орбита 2 
+
+Подробная информация о спутниках группировки
+
+
+===СТАТУС ГРУППИРОВКИ: Орбита 1 ====
+Колличество спутников: 3
+name='Спутник связи Рассвет-1', isActive=false, batteryLevel=0,99
+name='Спутник зондирования Зенит-1 ', isActive=false, batteryLevel=0,99
+name='Спутник зондирования Зенит-2 ', isActive=false, batteryLevel=0,44
+
+===СТАТУС ГРУППИРОВКИ: Орбита 2 ====
+Колличество спутников: 2
+name='Спутник связи Рассвет-2', isActive=false, batteryLevel=0,75
+name='Спутник зондирования Зенит-3 ', isActive=false, batteryLevel=0,12
+
+===АКТИВАЦИЯ СПУТНИКОВ ГРУППИРОВКИ===
+
+
+Активация Спутников в Группировке Орбита 1 
+Активация Спутников в Группировке Орбита 2 
+=== ВЫПОЛНЕНИЕ МИССИЙ ДЛЯ ГРУППИРОВКИ: Орбита 1 ===
+
+Выполенение миссий Группировки ОРБИТА 1
+Спутник связи Рассвет-1: Передача данных со скоростью 500,0 Мбит/с
+Спутник связи Рассвет-1: Отправил 500,0 Мбит данных!
+Спутник зондирования Зенит-1 : Сьемка территории с разрешением 2880,0 м.пиксель
+Снимок: 1 сделан!
+Спутник зондирования Зенит-2 : Сьемка территории с разрешением 4350,0 м.пиксель
+Снимок: 1 сделан!
+
+=== ВЫПОЛНЕНИЕ МИССИЙ ДЛЯ ГРУППИРОВКИ: Орбита 2 ===
+
+Выполенение миссий Группировки ОРБИТА 2
+Спутник связи Рассвет-2: Передача данных со скоростью 1000,0 Мбит/с
+Спутник связи Рассвет-2: Отправил 1000,0 Мбит данных!
+❌ Спутник зондирования Зенит-3 : сьемка невозможна - аппарат не активен
+
+Подробная информация о спутниках группировки
+
+
+===СТАТУС ГРУППИРОВКИ: Орбита 1 ====
+Колличество спутников: 3
+name='Спутник связи Рассвет-1', isActive=true, batteryLevel=0,94
+name='Спутник зондирования Зенит-1 ', isActive=true, batteryLevel=0,91
+name='Спутник зондирования Зенит-2 ', isActive=true, batteryLevel=0,36
+
+===СТАТУС ГРУППИРОВКИ: Орбита 2 ====
+Колличество спутников: 2
+name='Спутник связи Рассвет-2', isActive=true, batteryLevel=0,70
+name='Спутник зондирования Зенит-3 ', isActive=false, batteryLevel=0,12
+{Орбита 1=SatelliteConstellation(constellationName=Орбита 1, satelites=[Спутник связи Рассвет-1 (Заряд: 94%), Спутник зондирования Зенит-1  (Заряд: 91%), Спутник зондирования Зенит-2  (Заряд: 36%)]), Орбита 2=SatelliteConstellation(constellationName=Орбита 2, satelites=[Спутник связи Рассвет-2 (Заряд: 70%), Спутник зондирования Зенит-3  (Заряд: 12%)])}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

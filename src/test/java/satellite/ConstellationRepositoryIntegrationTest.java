@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest(classes = SatelliteApplication.class)
+@SpringBootTest(classes = Main.class)
 public class ConstellationRepositoryIntegrationTest {
 
     @Autowired
