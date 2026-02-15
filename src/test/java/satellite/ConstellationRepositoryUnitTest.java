@@ -3,8 +3,6 @@ package satellite;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
-import satelite.ConstellationRepository;
-import satelite.SatelliteConstellation;
 
 import java.util.Map;
 

@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="satellite.SatelliteLogicTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-14T20:29:28.191Z" hostname="admins-MacBook-Air.local" time="0.015">
+<testsuite name="satellite.SatelliteLogicTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-02-15T11:47:17.764Z" hostname="admins-MacBook-Air.local" time="0.006">
   <properties/>
-  <testcase name="Низкий зараяд спутника" classname="satellite.SatelliteLogicTest" time="0.015"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="Покрытие toString и базовых методов" classname="satellite.SatelliteLogicTest" time="0.001"/>
+  <testcase name="Спутник съемки должен считать количество фото" classname="satellite.SatelliteLogicTest" time="0.002"/>
+  <testcase name="Низкий заряд спутника" classname="satellite.SatelliteLogicTest" time="0.0"/>
+  <testcase name="Спутник связи должен успешно выполнять миссию" classname="satellite.SatelliteLogicTest" time="0.001"/>
+  <testcase name="Невозможность активации при низком заряде" classname="satellite.SatelliteLogicTest" time="0.001"/>
+  <system-out><![CDATA[Созранена группировка: Орбита2
+Добавлен спутник Фото в Группировку Орбита2 
+
+Активация Спутников в Группировке Орбита2 
+=== ВЫПОЛНЕНИЕ МИССИЙ ДЛЯ ГРУППИРОВКИ: Орбита2 ===
+
+Выполенение миссий Группировки ОРБИТА2
+Фото: Сьемка территории с разрешением 1080,0 м.пиксель
+Снимок: 1 сделан!
+
+=== ВЫПОЛНЕНИЕ МИССИЙ ДЛЯ ГРУППИРОВКИ: Орбита2 ===
+
+Выполенение миссий Группировки ОРБИТА2
+Фото: Сьемка территории с разрешением 1080,0 м.пиксель
+Снимок: 2 сделан!
+Созранена группировка: Орбита1
+Добавлен спутник Test в Группировку Орбита1 
+
+Активация Спутников в Группировке Орбита1 
+=== ВЫПОЛНЕНИЕ МИССИЙ ДЛЯ ГРУППИРОВКИ: Орбита1 ===
+
+Выполенение миссий Группировки ОРБИТА1
+Test: Передача данных со скоростью 100,0 Мбит/с
+Test: Отправил 100,0 Мбит данных!
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

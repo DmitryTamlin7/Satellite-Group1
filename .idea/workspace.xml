@@ -5,48 +5,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a1ecc21-83d3-4c46-863f-d2a36aef56f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_projectlombok_lombok_1_18_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/satelite/SatelliteApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/satellite/ConstellationRepositoryIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/satellite/ConstellationRepositoryMockTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/satellite/ConstellationRepositoryUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/satellite/SatelliteLogicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/checksums/checksums.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/satellite/DomainClassesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/satellite/GlobalSystemMockTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/satellite/MainClassTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/satellite/SpaceOperationCenterServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.13/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/SateliteGroup.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/SateliteGroup.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/CommunicationSatellite.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/satelite/CommunicationSatellite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/EnergySystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/satelite/EnergySystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/ImagingSatelite.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/satelite/ImagingSatelite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/satelite/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/Satellite.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/satelite/Satellite.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/SatelliteConstellation.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/satelite/SatelliteConstellation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/SatelliteState.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/satelite/SatelliteState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/SpaceOperationCenterService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/satelite/SpaceOperationCenterService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/CommunicationSatellite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/ConstellationRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/EnergySystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/ImagingSatelite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/Satellite.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/SatelliteApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/SatelliteConstellation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/SatelliteState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/satelite/SpaceOperationCenterService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/satellite/ConstellationRepositoryIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/satellite/ConstellationRepositoryIntegrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/satellite/ConstellationRepositoryMockTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/satellite/ConstellationRepositoryMockTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/satellite/ConstellationRepositoryUnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/satellite/ConstellationRepositoryUnitTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/satellite/SatelliteLogicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/satellite/SatelliteLogicTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/SateliteGroup-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/SateliteGroup-plain.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/SateliteGroup.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/SateliteGroup.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/jacoco/test/html/jacoco-sessions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/CommunicationSatellite.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/CommunicationSatellite.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/ConstellationRepository.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/ConstellationRepository.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/EnergySystem.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/EnergySystem.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/ImagingSatelite.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/ImagingSatelite.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/Main.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/Satellite.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/Satellite.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/SatelliteApplication.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/SatelliteApplication.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/SatelliteConstellation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/SatelliteConstellation.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/SatelliteState.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/SatelliteState.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/SpaceOperationCenterService.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/SpaceOperationCenterService.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/jacoco/test/html/satelite/index.source.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/problems/problems-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/satellite.SatelliteLogicTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/satellite.SatelliteLogicTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/satellite.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/satellite.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resolvedMainClassName" beforeDir="false" afterPath="$PROJECT_DIR$/build/resolvedMainClassName" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-satellite.SatelliteLogicTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-satellite.SatelliteLogicTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/CommunicationSatellite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satelite/CommunicationSatellite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/EnergySystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satelite/EnergySystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/ImagingSatelite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satelite/ImagingSatelite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satelite/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/Satellite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satelite/Satellite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/SatelliteConstellation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satelite/SatelliteConstellation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/SatelliteState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satelite/SatelliteState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/SpaceOperationCenterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satelite/SpaceOperationCenterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/CommunicationSatellite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satellite/CommunicationSatellite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/ConstellationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satellite/ConstellationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/EnergySystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satellite/EnergySystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/ImagingSatelite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satellite/ImagingSatelite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satellite/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/Satellite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satellite/Satellite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/SatelliteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satellite/SatelliteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/SatelliteConstellation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satellite/SatelliteConstellation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/SatelliteState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satellite/SatelliteState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/satelite/SpaceOperationCenterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/satellite/SpaceOperationCenterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/satellite/ConstellationRepositoryIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/satellite/ConstellationRepositoryIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/satellite/ConstellationRepositoryMockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/satellite/ConstellationRepositoryMockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/satellite/ConstellationRepositoryUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/satellite/ConstellationRepositoryUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/satellite/SatelliteLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/satellite/SatelliteLogicTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,8 +164,24 @@
     "Gradle.ConstellationRepositoryMockTest.executor": "Run",
     "Gradle.ConstellationRepositoryUnitTest (1).executor": "Run",
     "Gradle.ConstellationRepositoryUnitTest.executor": "Run",
+    "Gradle.DomainClassesTest.executor": "Run",
+    "Gradle.DomainClassesTest.testConstellationLogic.executor": "Run",
+    "Gradle.DomainClassesTest.testEnergySystem.executor": "Run",
+    "Gradle.DomainClassesTest.testSatelliteBaseLogic.executor": "Run",
+    "Gradle.DomainClassesTest.testSatelliteState.executor": "Run",
+    "Gradle.GlobalSystemMockTest.executor": "Run",
+    "Gradle.MainClassTest.executor": "Run",
     "Gradle.SateliteGroup [:satelite.Main.main()].executor": "Run",
     "Gradle.SateliteGroup [:satelite.SatelliteApplication.main()].executor": "Run",
+    "Gradle.SateliteGroup [:satellite.Main.main()].executor": "Run",
+    "Gradle.SateliteGroup [:satellite.SatelliteApplication.main()].executor": "Run",
+    "Gradle.SatelliteLogicTest.commSatMissionTest.executor": "Run",
+    "Gradle.SatelliteLogicTest.coverageBooster.executor": "Run",
+    "Gradle.SatelliteLogicTest.executor": "Run",
+    "Gradle.SatelliteLogicTest.imagingSatMissionTest.executor": "Run",
+    "Gradle.SatelliteLogicTest.shouldNotActivateWithLowBattery.executor": "Run",
+    "Gradle.SpaceOperationCenterServiceTest.executeAllMissionsTest.executor": "Run",
+    "Gradle.lobalSystemMockTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -145,15 +197,24 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main 21">
+    <configuration name="Main 21" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="homebrew-21" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="satelite.Main" />
+      <option name="MAIN_CLASS_NAME" value="satellite.Main" />
+      <module name="SateliteGroup.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="ms-17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="satellite.Main" />
       <module name="SateliteGroup.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="satelite.*" />
+          <option name="PATTERN" value="satellite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,16 +235,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="homebrew-21" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="satelite.Main" />
-      <module name="SateliteGroup.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConstellationRepositoryIntegrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DomainClassesTest.testSatelliteState" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -196,7 +248,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;satellite.ConstellationRepositoryIntegrationTest&quot;" />
+            <option value="&quot;satellite.DomainClassesTest.testSatelliteState&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -207,7 +259,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ConstellationRepositoryIntegrationTest.fullTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GlobalSystemMockTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -220,7 +272,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;satellite.ConstellationRepositoryIntegrationTest.fullTest&quot;" />
+            <option value="&quot;satellite.GlobalSystemMockTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -231,7 +283,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ConstellationRepositoryMockTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MainClassTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -244,7 +296,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;satellite.ConstellationRepositoryMockTest&quot;" />
+            <option value="&quot;satellite.MainClassTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -255,7 +307,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ConstellationRepositoryUnitTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SatelliteLogicTest.coverageBooster" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -268,7 +320,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;satellite.ConstellationRepositoryUnitTest&quot;" />
+            <option value="&quot;satelite.SatelliteLogicTest.coverageBooster&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -279,7 +331,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ConstellationRepositoryUnitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="lobalSystemMockTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -292,7 +344,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;satelite.ConstellationRepositoryUnitTest&quot;" />
+            <option value="&quot;satellite.lobalSystemMockTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -304,21 +356,21 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Main 21" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="Gradle.ConstellationRepositoryIntegrationTest.fullTest" />
-      <item itemvalue="Gradle.ConstellationRepositoryIntegrationTest" />
-      <item itemvalue="Gradle.ConstellationRepositoryMockTest" />
-      <item itemvalue="Gradle.ConstellationRepositoryUnitTest" />
-      <item itemvalue="Gradle.ConstellationRepositoryUnitTest (1)" />
+      <item itemvalue="Gradle.DomainClassesTest.testSatelliteState" />
+      <item itemvalue="Gradle.GlobalSystemMockTest" />
+      <item itemvalue="Gradle.MainClassTest" />
+      <item itemvalue="Gradle.SatelliteLogicTest.coverageBooster" />
+      <item itemvalue="Gradle.lobalSystemMockTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ConstellationRepositoryIntegrationTest.fullTest" />
-        <item itemvalue="Gradle.ConstellationRepositoryUnitTest (1)" />
-        <item itemvalue="Gradle.ConstellationRepositoryUnitTest" />
-        <item itemvalue="Gradle.ConstellationRepositoryMockTest" />
-        <item itemvalue="Gradle.ConstellationRepositoryIntegrationTest" />
+        <item itemvalue="Gradle.GlobalSystemMockTest" />
+        <item itemvalue="Gradle.lobalSystemMockTest" />
+        <item itemvalue="Gradle.MainClassTest" />
+        <item itemvalue="Gradle.SatelliteLogicTest.coverageBooster" />
+        <item itemvalue="Gradle.DomainClassesTest.testSatelliteState" />
       </list>
     </recent_temporary>
   </component>
