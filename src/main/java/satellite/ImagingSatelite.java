@@ -5,12 +5,10 @@ public class ImagingSatelite extends Satellite{
     private double resolution;
     private int photosTaken;
 
-    public ImagingSatelite(String name,  double  batteryLevel, double resolution) {
-        super(name, batteryLevel);
+    public ImagingSatelite(String name, double resolution, EnergySystem energy) {
+        super(name, energy);
         this.resolution = resolution;
         this.photosTaken = 0;
-        state = new SatelliteState();
-
     }
 
     public int getPhotosTaken() {
@@ -23,6 +21,10 @@ public class ImagingSatelite extends Satellite{
 
     @Override
     protected void performMission() {
+        if (energy.getBatteryLevel() < 0.20){
+            System.out.println("Сьемка невозмоджна аппарат имеет критический уровень заряда");
+            deactivate();
+        }
         if (state.isActive()) {
             System.out.printf("%s: Сьемка территории с разрешением %.1f м.пиксель\n", getName(), getResolution());
             TakePhoto();

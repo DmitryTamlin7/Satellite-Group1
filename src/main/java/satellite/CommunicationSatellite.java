@@ -10,13 +10,10 @@ public class CommunicationSatellite extends  Satellite{
 
     private  double bandWidth;
 
-    public CommunicationSatellite(String name, double energy,  double bandWidth) {
+    public CommunicationSatellite(String name, double bandWidth, EnergySystem energy) {
         super(name, energy);
         this.bandWidth = bandWidth;
-        state = new SatelliteState();
     }
-
-    public double getBandWidth() { return bandWidth; }
 
     @Override
     protected void performMission() {

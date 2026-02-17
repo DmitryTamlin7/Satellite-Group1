@@ -14,32 +14,37 @@ public class Main {
         ConstellationRepository constellationRepository = context.getBean(ConstellationRepository.class);
         SpaceOperationCenterService operationCenter = context.getBean(SpaceOperationCenterService.class);
 
-        CommunicationSatellite comsat1 = new CommunicationSatellite(
+        SatelliteFactory comFactory = new CommunicationSatelliteFactory();
+        SatelliteFactory igmFactory = new ImagingSatelliteFactory();
+
+
+
+        Satellite comsat1 = comFactory.createSatellite(
                 "Спутник связи Рассвет-1",
                 0.99,
                 500.0
 
         );
 
-        CommunicationSatellite comsat2 = new CommunicationSatellite(
+        Satellite comsat2 = comFactory.createSatellite(
                 "Спутник связи Рассвет-2",
                 0.75,
                 1000.0
         );
 
-        ImagingSatelite imgsat1 = new ImagingSatelite(
+        Satellite imgsat1 = igmFactory.createSatellite(
                 "Спутник зондирования Зенит-1 ",
               0.99,
                 2880
         );
 
-        ImagingSatelite imgsat2 = new ImagingSatelite(
+        Satellite imgsat2 = igmFactory.createSatellite(
                 "Спутник зондирования Зенит-2 ",
                 0.44,
                  4350
         );
 
-        ImagingSatelite imgsat3 = new ImagingSatelite(
+        Satellite imgsat3 = igmFactory.createSatellite(
                 "Спутник зондирования Зенит-3 ",
               0.12,
                 1080
