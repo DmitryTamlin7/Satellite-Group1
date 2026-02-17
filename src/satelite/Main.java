@@ -26,7 +26,7 @@ public class Main {
         ImagingSatelite imgsat2 = new ImagingSatelite(
                 "Спутник зондирования Зенит-2 ",
                 0.44,
-                4350
+                 4350
         );
 
         ImagingSatelite imgsat3 = new ImagingSatelite(

@@ -13,10 +13,10 @@ public class CommunicationSatellite extends  Satelite{
 
     @Override
     protected void performMission() {
-        if (isActive()){
+        if (state.isActive()){
             System.out.printf("%s: Передача данных со скоростью %.1f Мбит/с\n", getName(), bandWidth);
             sendData(bandWidth);
-            consumeBattery(0.05);
+            consumeEnergy(0.05);
         }
         else {
             System.out.printf("❌ %s: Не может передать данные - не автивен\n", getName());
