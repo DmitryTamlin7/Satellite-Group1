@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="satellite.MainClassTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-02-15T11:56:24.192Z" hostname="admins-MacBook-Air.local" time="0.112">
+<testsuite name="satellite.MainClassTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-02-17T14:53:39.586Z" hostname="admins-Air" time="0.126">
   <properties/>
-  <testcase name="Проверка работы исключая ошибки портов и тд." classname="satellite.MainClassTest" time="0.11"/>
+  <testcase name="Проверка работы исключая ошибки портов и тд." classname="satellite.MainClassTest" time="0.123"/>
   <testcase name="Проверка возможность подьема" classname="satellite.MainClassTest" time="0.002"/>
   <system-out><![CDATA[ЗАПСК СИСТЕМЫ УПРАЛЕНИЯ СПУТНИКОВОЙ ГРУППИРОВКОЙ
 
@@ -16,9 +16,9 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.2)
 
-2026-02-15T14:56:24.214+03:00  INFO 85745 --- [    Test worker] satellite.Main                           : Starting Main using Java 21.0.8 with PID 85745 (started by admin in /Users/admin/Desktop/БауманТех/SateliteGroup)
-2026-02-15T14:56:24.214+03:00  INFO 85745 --- [    Test worker] satellite.Main                           : No active profile set, falling back to 1 default profile: "default"
-2026-02-15T14:56:24.296+03:00  INFO 85745 --- [    Test worker] satellite.Main                           : Started Main in 0.102 seconds (process running for 2.218)
+2026-02-17T17:53:39.616+03:00  INFO 41496 --- [    Test worker] satellite.Main                           : Starting Main using Java 21.0.10 with PID 41496 (started by admin in /Users/admin/Desktop/БауманТех/SateliteGroup)
+2026-02-17T17:53:39.616+03:00  INFO 41496 --- [    Test worker] satellite.Main                           : No active profile set, falling back to 1 default profile: "default"
+2026-02-17T17:53:39.703+03:00  INFO 41496 --- [    Test worker] satellite.Main                           : Started Main in 0.114 seconds (process running for 2.346)
 Созранена группировка: Орбита 1
 Созранена группировка: Орбита 2
 
