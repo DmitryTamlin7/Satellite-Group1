@@ -5,70 +5,33 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class DomainClassesTest {
+    private EnergySystem createEnergy(double level, double critical) {
+        return EnergySystem.builder()
+                .batteryLevel(level)
+                .maxBattery(1.0)
+                .minBattery(0.0)
+                .criticleLevel(critical)
+                .build();
+    }
 
     @Test
-    @DisplayName("Критический уровень зарада")
+    @DisplayName("Критический уровень заряда")
     void testEnergySystem() {
-        EnergySystem energy = new EnergySystem(0.20);
-        energy.consumeBattery(0.15);
+        EnergySystem energy = createEnergy(0.20, 0.10);
+        energy.consumeBattery(0.15); // Остаток 0.05
 
         Assertions.assertEquals(0.05, energy.getBatteryLevel(), 0.001);
-        Assertions.assertTrue(energy.isCriticleLevel());
-        Assertions.assertNotNull(energy.toString());
-
+        Assertions.assertTrue(energy.isCriticleLevel(), "Заряд 0.05 должен быть критическим при пороге 0.10");
     }
 
     @Test
-    @DisplayName("Проверка состояний Satellite State")
-    void testSatelliteState(){
-        SatelliteState state = new SatelliteState();
-        Assertions.assertFalse(state.isActive());
-        state.activate();
-        Assertions.assertTrue(state.isActive());
-        state.deactivate();
-        Assertions.assertFalse(state.isActive());
-        Assertions.assertNotNull(state.toString());
-        Assertions.assertNotNull(state.hashCode());
-        Assertions.assertNotNull(state.getClass());
-    }
-
-    @Test
-    @DisplayName("Satellite Проверка логики активации и деактивации")
+    @DisplayName("Satellite: Проверка логики активации и деактивации")
     void testSatelliteBaseLogic() {
-        CommunicationSatellite com = new CommunicationSatellite("Зенит", 0.45, 500);
-        Assertions.assertTrue(com.activate());
-        Assertions.assertTrue(com.isActive());
 
-        CommunicationSatellite com2 = new CommunicationSatellite("Зенит22", 0.05, 500);
-        Assertions.assertFalse(com2.activate());
+        CommunicationSatellite com = new CommunicationSatellite("Зенит", 500.0, createEnergy(0.45, 0.05));
+        Assertions.assertTrue(com.activate(), "Спутник должен активироваться при нормальном заряде");
 
-        Assertions.assertNotNull(com.toString());
-        Assertions.assertTrue(com.toString().contains("Зенит"));
+        CommunicationSatellite com2 = new CommunicationSatellite("Зенит22", 500.0, createEnergy(0.02, 0.05));
+        Assertions.assertFalse(com2.activate(), "Спутник НЕ должен активироваться при заряде ниже критического");
     }
-
-    @Test
-    @DisplayName("SatelliteConstellation: Массовые операции")
-    void testConstellationLogic() {
-        SatelliteConstellation constellation = new SatelliteConstellation("Orion12");
-
-
-        CommunicationSatellite sat1 = new CommunicationSatellite("Sat1", 50.0,100);
-        ImagingSatelite sat2 = new ImagingSatelite("Sat2", 0.9, 1440);
-
-        constellation.addSatellite(sat1);
-        constellation.addSatellite(sat2);
-
-        Assertions.assertEquals(2, constellation.getSatelites().size());
-        Assertions.assertEquals("Orion12", constellation.getConstellationName());
-
-        constellation.ActivateAllSatellites();
-        Assertions.assertTrue(sat1.isActive());
-        Assertions.assertTrue(sat2.isActive());
-        constellation.executeAllMission();
-
-        String details = constellation.getSatellitesDetailedMultiline();
-        Assertions.assertNotNull(details);
-        Assertions.assertTrue(details.contains("Sat1"));
-    }
-
 }

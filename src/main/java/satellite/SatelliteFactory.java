@@ -1,5 +1,6 @@
 package satellite;
 
 public interface SatelliteFactory {
-    Satellite createSatellite(String name, double maxEnergy, double specificParam);
+    Satellite createSatelliteWithParameter(SatelliteParam param);
+    boolean isSatelliteTypeSupported(SatelliteType type);
 }

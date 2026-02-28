@@ -19,25 +19,25 @@ public class ConstellationRepositoryUnitTest {
         SatelliteConstellation constellation = new SatelliteConstellation(name);
         repository.addConstellation(constellation);
 
-        Map<String, SatelliteConstellation> group = repository.getAllConstellation();
-        Assertions.assertEquals(1, group.size(), "добавлен 1 спуник в группировку");
-        Assertions.assertTrue(group.containsKey(name), "Ключ имя группировки");
-        Assertions.assertEquals(constellation, group.get(name), "Обьект один и тот же должен совпадать");
+        Map<String, SatelliteConstellation> allGroups = repository.getAllConstellation();
+
+        Assertions.assertEquals(1, allGroups.size());
+        Assertions.assertTrue(allGroups.containsKey(name));
+        Assertions.assertEquals(constellation, allGroups.get(name));
     }
 
     @Test
-    @DisplayName("Поиск несуществующей группировки вернет Optional")
-    void shouldReturnEmptyWhenConstellationNotFound(){
+    @DisplayName("Ошибка при поиске несуществующей группировки")
+    void shouldThrowExceptionWhenNotFound(){
         assertThrows(RuntimeException.class, () -> {
             repository.getConstellation("Non-Existing");
-        }, "Должна быть ошибка RuntimeException, если группировка не найдена");
+        });
     }
 
     @Test
-    @DisplayName("Ошибка при получении несуществующей группы")
-    void testError() {
-        assertThrows(RuntimeException.class, () -> repository.getConstellation("NullOrbit"));
+    @DisplayName("Проверка, что пустой репозиторий возвращает пустую карту, а не null")
+    void testEmptyRepository() {
+        Assertions.assertNotNull(repository.getAllConstellation());
+        Assertions.assertTrue(repository.getAllConstellation().isEmpty());
     }
-
-
 }

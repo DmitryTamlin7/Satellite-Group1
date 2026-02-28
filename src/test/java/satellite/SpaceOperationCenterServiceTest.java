@@ -6,21 +6,25 @@ import org.junit.jupiter.api.Test;
 
 public class SpaceOperationCenterServiceTest {
 
+    private EnergySystem createEnergy() {
+        return EnergySystem.builder().batteryLevel(0.9).maxBattery(1.0).build();
+    }
+
     @Test
-    @DisplayName("Сервис выполняет мисиию всей группировки")
+    @DisplayName("Сервис выполняет миссию всей группировки")
     void executeAllMissionsTest(){
         ConstellationRepository repository = new ConstellationRepository();
-        SatelliteConstellation constellation = new SatelliteConstellation("SatelliteG2");
+        String groupName = "SatelliteG2";
+        SatelliteConstellation constellation = new SatelliteConstellation(groupName);
         repository.addConstellation(constellation);
+
         SpaceOperationCenterService service = new SpaceOperationCenterService(repository);
+        service.addSatelliteToConstellation(groupName, new ImagingSatelite("img1", 2560.0, createEnergy()));
+        service.addSatelliteToConstellation(groupName, new CommunicationSatellite("com1", 500.0, createEnergy()));
 
+        service.activateAllSatellite(groupName);
+        service.executeConstellationMission(groupName);
 
-        service.addSatelliteToConstellation(constellation.getConstellationName(), new ImagingSatelite("img1", 0.55, 2560));
-        service.addSatelliteToConstellation(constellation.getConstellationName(), new CommunicationSatellite("com1", 0.55, 500));
-        service.activateAllSatellite(constellation.getConstellationName());
-        service.executeConstellationMission(constellation.getConstellationName());
-
-        Assertions.assertNotNull(repository.getAllConstellation());
-
+        Assertions.assertEquals(2, repository.getConstellation(groupName).getSatelites().size());
     }
 }

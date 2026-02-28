@@ -11,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-
 @ExtendWith(MockitoExtension.class)
 public class ConstellationRepositoryMockTest {
 
@@ -22,7 +21,7 @@ public class ConstellationRepositoryMockTest {
     private SpaceOperationCenterService service;
 
     @Test
-    @DisplayName("Вызов метода при добваления в репозиторий")
+    @DisplayName("Вызов метода при добавлении группировки в репозиторий")
     void testServiceAddsConstellation(){
         service.createAndSaveConstellation("ЮрийГагарин7");
         verify(repositoryMock, times(1))
@@ -30,16 +29,12 @@ public class ConstellationRepositoryMockTest {
     }
 
     @Test
-    @DisplayName("Возврат заготовленной группировки")
+    @DisplayName("Возврат заготовленной группировки из Mock-объекта")
     void testMockReturnValues() {
         String name = "Space1";
-        SatelliteConstellation con = new SatelliteConstellation(name);
-
         when(repositoryMock.containsConstellation(name)).thenReturn(true);
         boolean exist = repositoryMock.containsConstellation(name);
         assertTrue(exist);
         verify(repositoryMock).containsConstellation(name);
     }
-
 }
-

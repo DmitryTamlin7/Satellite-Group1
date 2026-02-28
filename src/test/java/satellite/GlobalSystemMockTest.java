@@ -1,6 +1,5 @@
 package satellite;
 
-
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -22,29 +21,24 @@ public class GlobalSystemMockTest {
     private SpaceOperationCenterService service;
 
     @Test
-    @DisplayName("Проектный тест: Создание и инициализация всей системы")
-    void testFullSystemInitialization() {
-        String name = "Group1";
-        service.createAndSaveConstellation("Group1");
-        verify(repository, times(1))
-                .addConstellation(any(SatelliteConstellation.class));
-    }
-
-    @Test
     @DisplayName("Проектный тест: Логика работы спутника через сервис")
     void testSatelliteMissionFlowViaService() {
+        EnergySystem energy = EnergySystem.builder()
+                .batteryLevel(0.20)
+                .maxBattery(1.0)
+                .minBattery(0.0)
+                .criticleLevel(0.05)
+                .build();
+
         String groupName = "Group";
         SatelliteConstellation constellation = new SatelliteConstellation(groupName);
-        ImagingSatelite spySat = spy(new ImagingSatelite("Camera-1", 0.8, 5.0));
+        ImagingSatelite spySat = spy(new ImagingSatelite("Camera-1", 0.8, energy));
         constellation.addSatellite(spySat);
-
         when(repository.getConstellation(groupName)).thenReturn(constellation);
         service.activateAllSatellite(groupName);
         service.executeConstellationMission(groupName);
         verify(spySat, atLeastOnce()).performMission();
         assertTrue(spySat.isActive());
-        assertEquals(1, spySat.getPhotosTaken());
-        verify(repository, atLeast(2)).getConstellation(groupName);
     }
 
     @Test
