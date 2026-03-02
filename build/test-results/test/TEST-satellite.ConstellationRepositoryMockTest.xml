@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="satellite.ConstellationRepositoryMockTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-02-15T11:56:23.943Z" hostname="admins-MacBook-Air.local" time="0.153">
+  <properties/>
+  <testcase name="Возврат заготовленной группировки" classname="satellite.ConstellationRepositoryMockTest" time="0.145"/>
+  <testcase name="Вызов метода при добваления в репозиторий" classname="satellite.ConstellationRepositoryMockTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
