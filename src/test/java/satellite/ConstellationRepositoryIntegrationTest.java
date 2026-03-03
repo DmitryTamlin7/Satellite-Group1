@@ -9,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest(classes = Main.class)
 public class ConstellationRepositoryIntegrationTest {
     @Autowired
-    private SpaceOperationCenterService service;
+    private ConstellationService service;
     @Autowired
     private ConstellationRepository repository;
     @Autowired

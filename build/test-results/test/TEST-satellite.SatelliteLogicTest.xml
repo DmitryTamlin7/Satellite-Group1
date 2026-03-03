@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="satellite.SatelliteLogicTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-02-28T13:06:31.866Z" hostname="admins-MacBook-Air.local" time="0.016">
+<testsuite name="satellite.SatelliteLogicTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-03-03T10:30:46.530Z" hostname="admins-Air" time="0.003">
   <properties/>
-  <testcase name="Покрытие toString и базовых методов" classname="satellite.SatelliteLogicTest" time="0.002"/>
-  <testcase name="Спутник съемки должен считать количество фото" classname="satellite.SatelliteLogicTest" time="0.01"/>
+  <testcase name="Покрытие toString и базовых методов" classname="satellite.SatelliteLogicTest" time="0.0"/>
+  <testcase name="Спутник съемки должен считать количество фото" classname="satellite.SatelliteLogicTest" time="0.001"/>
   <testcase name="Низкий заряд спутника: не должен быть активен" classname="satellite.SatelliteLogicTest" time="0.0"/>
-  <testcase name="Спутник связи должен успешно выполнять миссию" classname="satellite.SatelliteLogicTest" time="0.002"/>
+  <testcase name="Спутник связи должен успешно выполнять миссию" classname="satellite.SatelliteLogicTest" time="0.001"/>
   <system-out><![CDATA[Созранена группировка: Орбита2
 Добавлен спутник Фото в Группировку Орбита2 
 

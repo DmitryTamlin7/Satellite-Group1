@@ -11,7 +11,7 @@ public class Main {
 
         ConfigurableApplicationContext context = SpringApplication.run(Main.class, args);
         ConstellationRepository constellationRepository = context.getBean(ConstellationRepository.class);
-        SpaceOperationCenterService operationCenter = context.getBean(SpaceOperationCenterService.class);
+        ConstellationService operationCenter = context.getBean(ConstellationService.class);
         SatelliteService satelliteService = context.getBean(SatelliteService.class);
 
         System.out.println("\n--- Создание спутников через SatelliteService ---");

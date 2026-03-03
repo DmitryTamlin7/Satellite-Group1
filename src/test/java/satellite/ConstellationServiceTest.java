@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class SpaceOperationCenterServiceTest {
+public class ConstellationServiceTest {
 
     private EnergySystem createEnergy() {
         return EnergySystem.builder().batteryLevel(0.9).maxBattery(1.0).build();
@@ -18,7 +18,7 @@ public class SpaceOperationCenterServiceTest {
         SatelliteConstellation constellation = new SatelliteConstellation(groupName);
         repository.addConstellation(constellation);
 
-        SpaceOperationCenterService service = new SpaceOperationCenterService(repository);
+        ConstellationService service = new ConstellationService(repository);
         service.addSatelliteToConstellation(groupName, new ImagingSatelite("img1", 2560.0, createEnergy()));
         service.addSatelliteToConstellation(groupName, new CommunicationSatellite("com1", 500.0, createEnergy()));
 

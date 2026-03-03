@@ -31,7 +31,7 @@ public class SatelliteLogicTest {
         ConstellationRepository repository = new ConstellationRepository();
         SatelliteConstellation constellation = new SatelliteConstellation("Орбита1");
         repository.addConstellation(constellation);
-        SpaceOperationCenterService service = new SpaceOperationCenterService(repository);
+        ConstellationService service = new ConstellationService(repository);
 
         service.addSatelliteToConstellation("Орбита1", sat);
         service.activateAllSatellite("Орбита1");
@@ -47,7 +47,7 @@ public class SatelliteLogicTest {
         ConstellationRepository repository = new ConstellationRepository();
         SatelliteConstellation constellation = new SatelliteConstellation("Орбита2");
         repository.addConstellation(constellation);
-        SpaceOperationCenterService service = new SpaceOperationCenterService(repository);
+        ConstellationService service = new ConstellationService(repository);
 
         service.addSatelliteToConstellation("Орбита2", img);
         service.activateAllSatellite("Орбита2");

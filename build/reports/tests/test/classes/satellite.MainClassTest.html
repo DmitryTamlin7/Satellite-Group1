@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.126s</div>
+<div class="counter">0.142s</div>
 <p>duration</p>
 </div>
 </td>
@@ -87,7 +87,7 @@
 <tr>
 <td class="success">Проверка работы исключая ошибки портов и тд.</td>
 <td class="success">testMainMethod()</td>
-<td class="success">0.125s</td>
+<td class="success">0.141s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -105,9 +105,9 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.2)
 
-2026-02-28T16:06:33.530+03:00  INFO 43764 --- [    Test worker] satellite.Main                           : Starting Main using Java 21.0.10 with PID 43764 (started by admin in /Users/admin/Desktop/БауманТех/SateliteGroup)
-2026-02-28T16:06:33.530+03:00  INFO 43764 --- [    Test worker] satellite.Main                           : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2026-02-28T16:06:33.625+03:00  INFO 43764 --- [    Test worker] satellite.Main                           : Started Main in 0.116 seconds (process running for 2.392)
+2026-03-03T13:30:46.408+03:00  INFO 93389 --- [    Test worker] satellite.Main                           : Starting Main using Java 21.0.10 with PID 93389 (started by admin in /Users/admin/SatelliteGroup)
+2026-03-03T13:30:46.408+03:00  INFO 93389 --- [    Test worker] satellite.Main                           : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-03-03T13:30:46.517+03:00  INFO 93389 --- [    Test worker] satellite.Main                           : Started Main in 0.13 seconds (process running for 2.434)
 
 --- Создание спутников через SatelliteService ---
 Созранена группировка: Орбита 1
@@ -116,10 +116,15 @@
 &#x1f6f0;️ Добавление спутников в группировки: 
 
 Добавлен спутник Спутник связи Рассвет-1 в Группировку Орбита 1 
+Метод addSatelliteToConstellation выполнен за 0 мс 
 Добавлен спутник Спутник связи Рассвет-2 в Группировку Орбита 2 
+Метод addSatelliteToConstellation выполнен за 0 мс 
 Добавлен спутник Спутник зондирования Зенит-1 в Группировку Орбита 1 
+Метод addSatelliteToConstellation выполнен за 0 мс 
 Добавлен спутник Спутник зондирования Зенит-2 в Группировку Орбита 1 
+Метод addSatelliteToConstellation выполнен за 1 мс 
 Добавлен спутник Спутник зондирования Зенит-3 в Группировку Орбита 2 
+Метод addSatelliteToConstellation выполнен за 0 мс 
 
 --- Статус группировок до активации ---
 
@@ -128,17 +133,21 @@
 name='Спутник связи Рассвет-1', isActive=false, batteryLevel=0,99
 name='Спутник зондирования Зенит-1', isActive=false, batteryLevel=0,99
 name='Спутник зондирования Зенит-2', isActive=false, batteryLevel=0,44
+Метод showConstellationStatus выполнен за 1 мс 
 
 ===СТАТУС ГРУППИРОВКИ: Орбита 2 ====
 Колличество спутников: 2
 name='Спутник связи Рассвет-2', isActive=false, batteryLevel=0,75
 name='Спутник зондирования Зенит-3', isActive=false, batteryLevel=0,12
+Метод showConstellationStatus выполнен за 0 мс 
 
 === АКТИВАЦИЯ И ВЫПОЛНЕНИЕ МИССИЙ ===
 
 
-Активация Спутников в Группировке Орбита 1 
-Активация Спутников в Группировке Орбита 2 
+Активация Спутников в Группировке Орбита 1 Метод activateAllSatellite выполнен за 0 мс 
+
+Активация Спутников в Группировке Орбита 2 Метод activateAllSatellite выполнен за 1 мс 
+
 === ВЫПОЛНЕНИЕ МИССИЙ ДЛЯ ГРУППИРОВКИ: Орбита 1 ===
 
 Выполенение миссий Группировки ОРБИТА 1
@@ -148,6 +157,7 @@ name='Спутник зондирования Зенит-3', isActive=false, bat
 Снимок: 1 сделан!
 Спутник зондирования Зенит-2: Сьемка территории с разрешением 4350,0 м.пиксель
 Снимок: 1 сделан!
+Метод executeConstellationMission выполнен за 0 мс 
 
 === ВЫПОЛНЕНИЕ МИССИЙ ДЛЯ ГРУППИРОВКИ: Орбита 2 ===
 
@@ -156,6 +166,7 @@ name='Спутник зондирования Зенит-3', isActive=false, bat
 Спутник связи Рассвет-2: Отправил 1000,0 Мбит данных!
 Сьемка невозмоджна аппарат имеет критический уровень заряда
 ❌ Спутник зондирования Зенит-3: сьемка невозможна - аппарат не активен
+Метод executeConstellationMission выполнен за 0 мс 
 
 --- Статус группировок после миссий ---
 
@@ -164,11 +175,13 @@ name='Спутник зондирования Зенит-3', isActive=false, bat
 name='Спутник связи Рассвет-1', isActive=true, batteryLevel=0,94
 name='Спутник зондирования Зенит-1', isActive=true, batteryLevel=0,91
 name='Спутник зондирования Зенит-2', isActive=true, batteryLevel=0,36
+Метод showConstellationStatus выполнен за 1 мс 
 
 ===СТАТУС ГРУППИРОВКИ: Орбита 2 ====
 Колличество спутников: 2
 name='Спутник связи Рассвет-2', isActive=true, batteryLevel=0,70
 name='Спутник зондирования Зенит-3', isActive=false, batteryLevel=0,12
+Метод showConstellationStatus выполнен за 1 мс 
 
 Финальный отчет репозитория:
 {Орбита 1=SatelliteConstellation(constellationName=Орбита 1, satelites=[Спутник связи Рассвет-1 (Заряд: 94%), Спутник зондирования Зенит-1 (Заряд: 91%), Спутник зондирования Зенит-2 (Заряд: 36%)]), Орбита 2=SatelliteConstellation(constellationName=Орбита 2, satelites=[Спутник связи Рассвет-2 (Заряд: 70%), Спутник зондирования Зенит-3 (Заряд: 12%)])}
@@ -183,7 +196,7 @@ name='Спутник зондирования Зенит-3', isActive=false, bat
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 8.13</a> at 28 февр. 2026 г., 16:06:33</p>
+<a href="https://www.gradle.org">Gradle 8.13</a> at 3 мар. 2026 г., 13:30:46</p>
 </div>
 </div>
 </body>

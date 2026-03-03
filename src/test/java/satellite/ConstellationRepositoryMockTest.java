@@ -18,7 +18,7 @@ public class ConstellationRepositoryMockTest {
     private ConstellationRepository repositoryMock;
 
     @InjectMocks
-    private SpaceOperationCenterService service;
+    private ConstellationService service;
 
     @Test
     @DisplayName("Вызов метода при добавлении группировки в репозиторий")

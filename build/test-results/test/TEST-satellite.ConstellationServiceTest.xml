@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="satellite.SpaceOperationCenterServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-02-28T13:06:33.646Z" hostname="admins-MacBook-Air.local" time="0.001">
+<testsuite name="satellite.ConstellationServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-03T10:30:46.300Z" hostname="admins-Air" time="0.002">
   <properties/>
-  <testcase name="Сервис выполняет миссию всей группировки" classname="satellite.SpaceOperationCenterServiceTest" time="0.001"/>
+  <testcase name="Сервис выполняет миссию всей группировки" classname="satellite.ConstellationServiceTest" time="0.002"/>
   <system-out><![CDATA[Созранена группировка: SatelliteG2
 Добавлен спутник img1 в Группировку SatelliteG2 
 Добавлен спутник com1 в Группировку SatelliteG2 

@@ -18,7 +18,7 @@ public class GlobalSystemMockTest {
     private ConstellationRepository repository;
 
     @InjectMocks
-    private SpaceOperationCenterService service;
+    private ConstellationService service;
 
     @Test
     @DisplayName("Проектный тест: Логика работы спутника через сервис")
