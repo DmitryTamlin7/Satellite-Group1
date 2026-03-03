@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="satellite.GlobalSystemMockTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-03-03T10:30:46.307Z" hostname="admins-Air" time="0.069">
+  <properties/>
+  <testcase name="Проектный тест: Логика работы спутника через сервис" classname="satellite.GlobalSystemMockTest" time="0.066"/>
+  <testcase name="Проектный тест: Защита системы (обработка отсутствующих данных)" classname="satellite.GlobalSystemMockTest" time="0.002"/>
+  <system-out><![CDATA[
+Активация Спутников в Группировке Group 
+=== ВЫПОЛНЕНИЕ МИССИЙ ДЛЯ ГРУППИРОВКИ: Group ===
+
+Выполенение миссий Группировки GROUP
+Camera-1: Сьемка территории с разрешением 0,8 м.пиксель
+Снимок: 1 сделан!
+Предупреждение: Группировка Empty не найдена. Миссия отменена.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
